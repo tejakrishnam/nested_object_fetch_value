@@ -2,8 +2,8 @@
 
 # Input :
 A string in a dictionary format
-Number of keys to be provided
-keys(Press Enter after each input key is provided)
+- Number of keys to be provided.
+- keys(Press Enter after each input key is provided).
 
 # Output:
-Value(The value of the key provided)
+- Value(The value of the key provided).
