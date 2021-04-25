@@ -1,7 +1,7 @@
 import string
 import json
 
-def safeget(dct, keys):
+def get_obj_value(dct, keys):
     for key in keys:
         try:
             dct = dct[key]
@@ -10,7 +10,7 @@ def safeget(dct, keys):
     return dct
 
 # provide input in a dictionary format
-example_dict = input("Provide the nested object/dictionary : ")
+input_dct = input("Provide the nested object/dictionary : ")
 
 # creating an empty list
 lst = []
@@ -22,5 +22,5 @@ n = int(input("Enter number of keys : "))
 for i in range(0, n):
     ele = str(input())
     lst.append(ele) # adding the element
-value = safeget(json.loads(example_dict), lst)
+value = get_obj_value(json.loads(input_dct), lst)
 print(value)
